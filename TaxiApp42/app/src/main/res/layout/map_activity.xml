@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".Activities.MapActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/orderBtn"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Заказать такси" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/orderBtn"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Назад" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/findBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/backBtn"
+            android:background="@color/colorPrimaryDark"
+            android:text="Поиск" />
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/passengerNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="255dp"
+        android:textSize="8sp"/>
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="0dp"
+        android:src="@drawable/passanger"/>
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/passengerMessageTV"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:textSize="16sp"
+        android:textColor="#111"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="45dp"
+                   android:layout_height="45dp"
+                   android:src="@drawable/driver"/>
+               <TextView
+                   android:id="@+id/driverNameTV"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="8sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/driverMessageTV"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#111"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingTop="20dp"
+            android:background="@color/place_autocomplete_separator"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
