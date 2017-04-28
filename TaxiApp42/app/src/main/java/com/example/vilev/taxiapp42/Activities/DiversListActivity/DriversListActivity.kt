@@ -29,6 +29,7 @@ class DriversListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val myList = RecyclerView(this)
         val list = generateItems()
+        val list1 =generateItems(2,0)
         myList.setOnClickListener(object : View.OnClickListener {
             override fun  onClick(view: View) {
                 view.getContext().startActivity(Intent(view.context, ConfirmActivity::class.java))
@@ -77,6 +78,7 @@ class DriversListActivity : AppCompatActivity() {
                 .get()
                 .build()
         val response: String = AppConfig.client.newCall(request).execute().body().string()
+        Log.i("drivers", "$response")
         val respObj = JsonParser().parse(response).asJsonObject
 
         if (!respObj.isJsonNull&&respObj.get("code").asInt==0){

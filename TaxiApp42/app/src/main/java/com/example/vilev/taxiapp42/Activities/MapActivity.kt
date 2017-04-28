@@ -61,13 +61,13 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, View.OnClickListene
 
     override fun onClick(v: View) {
         when (v.id) {
-            R.id.btnBack-> {
+            R.id.backBtn-> {
                 startActivity(Intent(this, LoginActivity::class.java))
             }
-            R.id.btnOrder -> {
+            R.id.orderBtn -> {
                 startActivity(Intent(this, DriversListActivity::class.java))
             }
-            R.id.btnFind->{
+            R.id.findBtn->{
                 try {
                     val intent = PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_FULLSCREEN)
                             .build(this)
